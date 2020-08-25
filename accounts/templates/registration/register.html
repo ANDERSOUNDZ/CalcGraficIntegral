@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <H1>REGISTRO</H1>
+        </div>
+        <div class="col">
+            <h1>Crea tu cuenta</h1>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button>Registro</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

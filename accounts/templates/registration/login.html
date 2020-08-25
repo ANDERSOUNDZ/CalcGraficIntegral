@@ -1,0 +1,21 @@
+{% extends 'index.html'%}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>INGRESA A TU CUENTA</h1>
+        </div>
+        <div class="col">
+            <h1>Logeate</h1>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
